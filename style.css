@@ -5,27 +5,95 @@ body {
     display: flex;
     list-style: none;
     justify-content: end;
-    /* padding-right: 200px; */
-    
+    padding-right: 500px;
+    /* margin-top: 20px; */
     /* transition: all 0.3s linear; */
 }
 
-ul.icons {
+.icon {
     margin: 0;
-    padding: 0 300px 0 0;
-
+    padding: 15px 2px;
+    width: 55%;
 }
 
-/* .li > img.icon {
- padding: 0;
-} */
 
-/* .icons:hover {
-    -webkit-img-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -moz-img-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -o-img-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    img-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-} */
+
+.effect {
+    display: flex; 
+    
+    a {
+      text-decoration: none !important;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: $border-radius;
+      margin-right: 20px;
+      font-size: $font-size;
+      overflow: hidden;
+      position: relative;
+      color: $basic-dark-color; //or change to your own color
+      border: 2px solid $basic-dark-color; //or change to your own color
+      
+      i {
+        position: relative;
+        z-index: 3;
+      }
+      
+      &:last-child {
+        margin-right: 0px;
+      }
+      
+      &:before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+      }
+      
+      i {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+
+
+
+  .effect.varrius {
+  
+    a {
+      transition: all 0.2s linear 0s;
+      
+      &:after {
+        content: "";
+        display: block;
+        width: 90%;
+        height: 90%;
+        top: -110%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+        background-color: $basic-dark-color;
+        border-radius: $border-radius;
+      }
+      
+      &:hover {
+        color: $basic-light-color;
+        
+        &:after {
+          top: 5%;
+          transition: all 0.2s linear 0s;
+        }
+      }
+    }
+  }
+  
+
+
+
 
 .zone {
     /*padding:30px 50px;
@@ -59,6 +127,7 @@ ul.icons {
     list-style: none;
     font-size: 0.6em;
     margin: 0;
+    padding: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     /* text-transform: uppercase; */
@@ -93,7 +162,6 @@ a {
     align-items: center;
     justify-content: center;
     height: 50vh;
-    
 }
 
 /*GRID*/
@@ -101,7 +169,7 @@ a {
 .grid-wrapper {
     display: grid;
     grid-gap: 15px;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     
 }
 
@@ -113,7 +181,7 @@ a {
 .box {
     background-color: #F5F5F5;
     /* padding: 150px; */
-    margin: 50px;
+    margin: 10px;
 }
 .text {
     margin: 100px;
@@ -132,7 +200,7 @@ footer {
  **********************************************************************/
 .green{
     background: #819BB1;
-    padding: 0 300px;
+    padding: 0 450px;
 }
 
 /***********************************************************************
@@ -141,8 +209,13 @@ footer {
 .red{
     background: white;
     height: auto;
+    padding: 0;
+    margin: -80px 0 -25px 0;
 }
 
+.red > img {
+    width: 25%;
+}
 /***********************************************************************
  *  Yellow Background
  **********************************************************************/
@@ -161,5 +234,6 @@ footer {
  **********************************************************************/
 .blue{
     background: #F5F5F5;
-    padding: 50px 300px;
+    padding: 35px 450px 75px;
+    
 }

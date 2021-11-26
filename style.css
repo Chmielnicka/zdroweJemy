@@ -1,6 +1,31 @@
 body {
     margin: auto 0;
 }
+.icons {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    /* padding-right: 200px; */
+    
+    /* transition: all 0.3s linear; */
+}
+
+ul.icons {
+    margin: 0;
+    padding: 0 300px 0 0;
+
+}
+
+/* .li > img.icon {
+ padding: 0;
+} */
+
+/* .icons:hover {
+    -webkit-img-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-img-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-img-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    img-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+} */
 
 .zone {
     /*padding:30px 50px;
@@ -10,7 +35,7 @@ body {
     color:white;
     font-size:2em;
     border-radius:4px;
-    border:1px solid #bbb;
+    /* border:1px solid #f5f5f6; */
     transition: all 0.3s linear;
 }
 
@@ -35,7 +60,8 @@ body {
     font-size: 0.6em;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-transform: uppercase;
+
+    /* text-transform: uppercase; */
     
 }
 
@@ -48,11 +74,11 @@ body {
 
 .push {
     margin-left: auto;
-    padding-right: 80px;
+    padding-right: 50px;
 }
 
 li {
-    padding: 15px;
+    padding: 10px;
 }
 
 a {
@@ -64,7 +90,6 @@ a {
 
 .container {
     display: flex;
-    padding: 50px;
     align-items: center;
     justify-content: center;
     height: 50vh;
@@ -75,8 +100,8 @@ a {
 
 .grid-wrapper {
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     
 }
 
@@ -107,7 +132,7 @@ footer {
  **********************************************************************/
 .green{
     background: #819BB1;
-    padding: 0 200px;
+    padding: 0 300px;
 }
 
 /***********************************************************************
@@ -136,5 +161,5 @@ footer {
  **********************************************************************/
 .blue{
     background: #F5F5F5;
-    padding: 50px 200px;
+    padding: 50px 300px;
 }
